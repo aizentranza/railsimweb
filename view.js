@@ -91,7 +91,7 @@ Canvas.create = function()
     inst.update = function()
     {
         var gl = this.mContext;
-        if (g_is_touch_device) {
+        if (g_is_touch_device && false) {
             this.mDisplayWidth  = window.outerWidth;
             this.mDisplayHeight = window.outerHeight;
         } else {

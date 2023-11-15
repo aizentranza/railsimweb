@@ -4205,7 +4205,7 @@ Canvas.create = function()
     inst.update = function()
     {
         var gl = this.mContext;
-        if (g_is_touch_device) {
+        if (g_is_touch_device && false) {
             this.mDisplayWidth  = window.outerWidth;
             this.mDisplayHeight = window.outerHeight;
         } else {
@@ -13834,7 +13834,7 @@ SetBodyClassName();
 'use strict';
 var cAppVersionMajor = 1;
 var cAppVersionMinor = 0;
-var cAppVersionMicro = 0;
+var cAppVersionMicro = 1;
 var g_cam_ctrl_default = CameraControl.create({});
 var g_cam_ctrl_model   = CameraControl.create({});
 g_cam_ctrl_model.mYaw = cPI / 6;
