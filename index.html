@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+    <title>RailSimWeb</title>
+    <link rel="stylesheet" href="rsw.css" />
+  </head>
+  <body>
+    <canvas id="canvas" style="display: none"></canvas>
+    <div class="splash" id="splash">
+      <h1>RailSimWeb</h1>
+      <p>by <a href="https://www.aizentranza.com/">aizentranza.com</a></p>
+      <p class="loading" id="loading">Loading...</p>
+      <div class="config" id="splash-config" style="display: none">
+        <h2>
+          <a href="javascript:main('en');" title="Start in English">START</a>
+          <a href="javascript:main('ja');" title="日本語で開始">スタート</a>
+        </h2>
+        <p>
+          <label>Anti-alias
+            <input type="checkbox" id="opt-aa"
+                   title="Disable to improve FPS on low-end graphics." />
+          </label>
+        </p>
+        <p>Resolution
+          <label><input type="radio" name="opt-reso" value="full" checked /> Full</label>
+          <label><input type="radio" name="opt-reso" value="half" /> 1/2</label>
+          <label><input type="radio" name="opt-reso" value="third" /> 1/3</label>
+          <label><input type="radio" name="opt-reso" value="quarter" /> 1/4</label>
+        </p>
+        <p>Undo stack size
+          <input type="text" id="opt-undo-size" size="4"
+                 title="Set small number to save memory. -1: infinity."/>
+        </p>
+      </div>
+      <p id="splash-version"></p>
+      <p>Licensed under <a href="https://www.gnu.org/licenses/gpl-3.0.html">GPLv3+</a></p>
+    </div>
+  </body>
+  <script src="config.js"></script>
+  <script src="lang.js"></script>
+  <script src="prim.js"></script>
+  <script src="debug.js"></script>
+  <script src="v2.js"></script>
+  <script src="v3.js"></script>
+  <script src="v4.js"></script>
+  <script src="aabb.js"></script>
+  <script src="dom.js"></script>
+  <script src="ui_ctrl.js"></script>
+  <script src="ui_struct.js"></script>
+  <script src="m34.js"></script>
+  <script src="m44.js"></script>
+  <script src="math.js"></script>
+  <script src="view.js"></script>
+  <script src="webgl.js"></script>
+  <script src="shader.js"></script>
+  <script src="line_drawer.js"></script>
+  <script src="box_drawer.js"></script>
+  <script src="sphere_drawer.js"></script>
+  <script src="smoke_drawer.js"></script>
+  <script src="field_drawer.js"></script>
+  <script src="model_drawer.js"></script>
+  <script src="rail_drawer.js"></script>
+  <script src="input.js"></script>
+  <script src="file.js"></script>
+  <script src="rail.js"></script>
+  <script src="edit_model.js"></script>
+  <script src="train.js"></script>
+  <script src="train_model.js"></script>
+  <script src="train_editor.js"></script>
+  <script src="struct.js"></script>
+  <script src="struct_model.js"></script>
+  <script src="struct_editor.js"></script>
+  <script src="rail_builder.js"></script>
+  <script src="field_editor.js"></script>
+  <script src="menu.js"></script>
+  <script src="main.js"></script>
+  <script src="default.rsw.layout.js"></script>
+  <script>boot();</script>
+</html>
