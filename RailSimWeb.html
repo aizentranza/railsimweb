@@ -11416,6 +11416,7 @@ Struct.create = function(edit_obj)
 {
     var strc = this.createObj();
     strc.mEditObj = edit_obj;
+    strc.mPartsAtt = [];
     strc.mPartsSwitchState = [];
     strc.mSmokesSwitchState = [];
     strc.mModel = this.getModelData(strc);
@@ -13834,7 +13835,7 @@ SetBodyClassName();
 'use strict';
 var cAppVersionMajor = 1;
 var cAppVersionMinor = 0;
-var cAppVersionMicro = 1;
+var cAppVersionMicro = 2;
 var g_cam_ctrl_default = CameraControl.create({});
 var g_cam_ctrl_model   = CameraControl.create({});
 g_cam_ctrl_model.mYaw = cPI / 6;

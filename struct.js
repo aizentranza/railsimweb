@@ -4,6 +4,7 @@ Struct.create = function(edit_obj)
 {
     var strc = this.createObj();
     strc.mEditObj = edit_obj;
+    strc.mPartsAtt = [];
     strc.mPartsSwitchState = [];
     strc.mSmokesSwitchState = [];
     strc.mModel = this.getModelData(strc);
