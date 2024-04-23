@@ -13676,6 +13676,7 @@ FieldEditor.save = function(data)
 };
 FieldEditor.load = function(gl, data)
 {
+    if (!data.field) { return; }
     this.clearField();
     for (var unit = g_field_unit_min; unit <= g_field_unit_max; unit *= 2) {
         var layer = data.field.layers['' + unit];
@@ -13835,7 +13836,7 @@ SetBodyClassName();
 'use strict';
 var cAppVersionMajor = 1;
 var cAppVersionMinor = 0;
-var cAppVersionMicro = 2;
+var cAppVersionMicro = 3;
 var g_cam_ctrl_default = CameraControl.create({});
 var g_cam_ctrl_model   = CameraControl.create({});
 g_cam_ctrl_model.mYaw = cPI / 6;

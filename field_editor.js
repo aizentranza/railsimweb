@@ -385,6 +385,7 @@ FieldEditor.save = function(data)
 };
 FieldEditor.load = function(gl, data)
 {
+    if (!data.field) { return; }
     this.clearField();
     for (var unit = g_field_unit_min; unit <= g_field_unit_max; unit *= 2) {
         var layer = data.field.layers['' + unit];

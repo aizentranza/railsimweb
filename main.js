@@ -1,7 +1,7 @@
 'use strict';
 var cAppVersionMajor = 1;
 var cAppVersionMinor = 0;
-var cAppVersionMicro = 2;
+var cAppVersionMicro = 3;
 var g_cam_ctrl_default = CameraControl.create({});
 var g_cam_ctrl_model   = CameraControl.create({});
 g_cam_ctrl_model.mYaw = cPI / 6;
